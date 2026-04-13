@@ -8,14 +8,14 @@ sudo nano /etc/systemd/system/myscript.service
 
 2. Paste this:
 ```
-ini[Unit]
+[Unit]
 Description=My Python Script
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /path/to/your_script.py
+ExecStart=/usr/bin/python3 /path/to/oled_ip.py
 Restart=always
-User=your_username
+User=<your_username>
 
 [Install]
 WantedBy=multi-user.target
