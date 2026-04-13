@@ -1,12 +1,16 @@
 This repo contains a Python script that retrieves the IP address of a Jetson at boot time. See the installation instructions below to run it at boot. It keeps trying until it gets a valid IP address, then opens the serial connection to the Waveshare robot base, updates the OLED, closes the connection, and exits.
 
 ## Installation
-1. Create a service file:
+1. Install pyserial if you haven't already
+```bash
+pip install pyserial
+```
+2. Create a service file:
 ```bash
 sudo nano /etc/systemd/system/myscript.service
 ```
 
-2. Paste this:
+1. Paste this:
 ```
 [Unit]
 Description=My Python Script
@@ -21,8 +25,8 @@ User=<your_username>
 WantedBy=multi-user.target
 ```
 Make sure to replace your_username.
-     
-        
+
+
 3. Enable and start it:
 ```bash
 sudo systemctl daemon-reload
