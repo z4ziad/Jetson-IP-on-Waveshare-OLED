@@ -10,7 +10,7 @@ pip install pyserial
 sudo nano /etc/systemd/system/myscript.service
 ```
 
-1. Paste this:
+3. Paste this:
 ```
 [Unit]
 Description=My Python Script
@@ -27,7 +27,7 @@ WantedBy=multi-user.target
 Make sure to replace your_username.
 
 
-3. Enable and start it:
+4. Enable and start it:
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable myscript
