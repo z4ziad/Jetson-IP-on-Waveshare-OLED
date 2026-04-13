@@ -20,7 +20,7 @@ User=<your_username>
 [Install]
 WantedBy=multi-user.target
 ```
-Make sure to replace your_username
+Make sure to replace your_username.   
 3. Enable and start it:
 ```bash
 sudo systemctl daemon-reload
