@@ -24,7 +24,7 @@ User=<your_username>
 [Install]
 WantedBy=multi-user.target
 ```
-Make sure to replace your_username.
+Make sure to replace your_username and /path/to/oled_ip.py
 
 
 4. Enable and start it:
