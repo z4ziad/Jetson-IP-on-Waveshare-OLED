@@ -27,10 +27,10 @@ def open_serial():
             time.sleep(1)
 
 def display_ip():
-    # [2] Keep trying until we get a valid IP
+    # [1] Keep trying until we get a valid IP
     ip = get_ip_address()
 
-    # [1] Keep trying to open the serial port
+    # [2] Keep trying to open the serial port
     ser = open_serial()
 
     try:
